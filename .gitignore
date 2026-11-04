@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.cache/
+exp_cim/
+data/
+*.db
+*.db.*
+*.out
+.pytest_cache/
+.idea/
+.vscode/

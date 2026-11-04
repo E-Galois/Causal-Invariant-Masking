@@ -1,0 +1,38 @@
+# Main-pipeline dependencies pinned from the remote Python 3.11.11 export.
+# Install the CUDA 12.8 PyTorch wheels first, using the README commands.
+# This is a focused dependency list, not a complete transitive lockfile.
+torch==2.10.0
+torchvision==0.25.0
+
+# Models, processors, and tokenizers.
+# 4.57.0 is yanked on PyPI; retained to match the exported environment.
+transformers==4.57.0
+accelerate==1.7.0
+huggingface-hub==0.36.2
+tokenizers==0.22.2
+safetensors==0.5.3
+sentencepiece==0.2.0
+protobuf==6.33.5
+einops==0.8.1
+timm==1.0.15
+pillow==11.0.0
+
+# Dataset loading and its version-sensitive data dependencies.
+datasets==3.6.0
+pyarrow==20.0.0
+pandas==2.2.3
+fsspec==2024.6.1
+
+# Numerical evaluation and helper-LLM output parsing.
+numpy==2.2.6
+scipy==1.16.0
+scikit-learn==1.7.0
+json-repair==0.52.2
+
+# Shared runtime/build helpers.
+packaging==25.0
+psutil==7.0.0
+
+# Required for GPU preparation, installed AFTER PyTorch and this file:
+# python -m pip install flash-attn==2.8.3 --no-build-isolation
+# See README.md for build prerequisites and the CUDA compiler caveat.
