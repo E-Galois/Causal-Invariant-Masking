@@ -2,13 +2,10 @@
 
 Code for paper [**Revealing Epistemic Uncertainty in MLLMs via Causal-Invariant Masking**](https://arxiv.org/pdf/2610.02887).
 
-----
 
 Haoyang Luo, Linwei Tao, Jie Gui, Xinghao Chen, Chang Xu, Jianyuan Guo, Minjing Dong*
 
 ## Overview
-
-----
 
 CIM estimates uncertainty in multimodal large language models (MLLMs) by
 comparing their predictions on an original image and a question-relevant
@@ -23,8 +20,6 @@ This repository contains the main hallucination-detection pipeline for VQA,
 POPE, and MME, including preparation and evaluation of both scores.
 
 ## Contents
-
-----
 
 - [Method](#method)
 - [Installation](#installation)
@@ -98,8 +93,6 @@ Dataset files and model weights are not bundled with this repository.
 
 ## Run
 
-----
-
 ### Full pipeline
 
 Run all three stages for one model and benchmark:
@@ -168,8 +161,6 @@ Use `--help` on each script to see its available arguments.
 
 ## Citation
 
-----
-
 If you find our work helpful in your research or application, you are welcome to cite CIM:
 
 ```bibtex
@@ -183,15 +174,11 @@ If you find our work helpful in your research or application, you are welcome to
 
 ## Acknowledgements
 
-----
-
 This implementation uses Qwen, InternVL, GroundingDINO, and Hugging Face
 Transformers and Datasets. Existing third-party attribution and license
 notices are retained in the corresponding source files.
 
 ## License
-
-----
 
 Original project code is released under the [MIT License](LICENSE).
 The incorporated `benchmark/comprehension/AdVQABuilder.py` loader, including
